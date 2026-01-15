@@ -15,6 +15,9 @@ def get_version() -> str:
 # hf-xet version used in both install_requires and extras["hf_xet"]
 HF_XET_VERSION = "hf-xet>=1.2.0,<2.0.0"
 
+# hf-xet version used in both install_requires and extras["hf_xet"]
+HF_XET_VERSION = "hf-xet>=1.2.0,<2.0.0"
+
 install_requires = [
     "filelock",
     "fsspec>=2023.5.0",
@@ -25,7 +28,7 @@ install_requires = [
     "shellingham",
     "tqdm>=4.42.1",
     "typer-slim",
-    "typing-extensions>=3.7.4.3",  # to be able to import TypeAlias
+    "typing-extensions>=4.1.0",  # to be able to import TypeAlias, dataclass_transform
 ]
 
 extras = {}
